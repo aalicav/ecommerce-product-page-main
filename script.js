@@ -6,13 +6,14 @@ function calculaPreço(){
 
     function soma(){
         quantidade++
-        document.getElementById("preço").textContent = quantidade*valorInicial
-
+        document.getElementById("preço").textContent = `$${quantidade*valorInicial}`
+        document.getElementById("quantidade").textContent = quantidade
     }
     function subtração(){
-        if(quantidade>0){ 
+        if(quantidade>1){ 
         quantidade--
-        document.getElementById("preço").textContent = quantidade*valorInicial
+        document.getElementById("preço").textContent = `$${quantidade*valorInicial}`
+        document.getElementById("quantidade").textContent = quantidade
         }
     }
 
@@ -21,6 +22,4 @@ function calculaPreço(){
 
     
 }
-    
-
 calculaPreço()

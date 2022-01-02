@@ -51,8 +51,35 @@ h1{
     position: relative;
     padding-top: 170px;
     display: grid;
-    grid-template-rows: 1px 100px 120px;
+    grid-template-rows: 1px 100px 120px 20px;
     row-gap: 30px;
     width: 400px;
     left: 900px;
+}
+#qtde_produtos{
+    display: grid;
+    grid-template-columns: 10px 10px 10px;
+    gap: 30px;
+    align-items: center;  
+}
+.botão{
+    width: 60px;
+    height: 50px;
+    text-align:center;
+    background-color: hsl(223, 64%, 98%);
+    border-color: transparent;
+    color: hsl(26, 100%, 55%);
+    font-size: 20px;
+}
+.arredondar{
+    border-radius: 8px;
+}
+#quantidade{
+    font-size: medium;
+    text-align: center;
+}
+#preço{
+    font-weight: 900;
+    color: black;
+    font-size: 25px;
 }
