@@ -1,0 +1,58 @@
+body{
+    background-color: hsl(0, 0%, 100%);
+    font-family: 'Kumbh Sans';
+    width: 1440px;
+    font-weight: 400;
+}
+p{
+    font-size: 16px;
+    color:hsl(0, 0%, 75%)
+}
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+#menu-separador{
+    display: grid;
+    grid-template-rows: 60px 1px;
+}
+#separador{
+    position: absolute;
+    top: 110px;
+    left: 1px;
+    width: 1080px;
+    border-bottom: 1px solid hsl(0, 0%,80%);
+    opacity: 0.3;
+}
+#menu{
+    display: grid;
+    grid-template-columns: 160px 130px;
+    align-items: center;
+    padding: 20px 10px 10px 150px; 
+}
+#menu ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 80px 50px 50px 50px 50px;
+    gap: 30px;
+    align-items: center;
+}
+#menu li {
+    font-weight: 400;
+    color: hsl(219, 9%, 45%);
+}
+h5{
+    color: hsl(26, 100%, 55%);
+    
+}
+h1{
+    font-weight:700;
+    font-size: 40px;
+}
+#alinhar-texto{
+    position: relative;
+    padding-top: 170px;
+    display: grid;
+    grid-template-rows: 1px 100px 120px;
+    row-gap: 30px;
+    width: 400px;
+    left: 900px;
+}
