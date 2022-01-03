@@ -60,7 +60,8 @@ h1{
     display: grid;
     grid-template-columns: 10px 10px 10px;
     gap: 30px;
-    align-items: center;  
+    align-items: center; 
+    justify-content: center;
 }
 .botão{
     width: 60px;
@@ -77,9 +78,53 @@ h1{
 #quantidade{
     font-size: medium;
     text-align: center;
+    border-top: 40px;
 }
 #preço{
     font-weight: 900;
     color: black;
     font-size: 25px;
+}
+.carrossel{
+    width: 500px;
+    height: 500px;
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    position: absolute;
+    top:200px;
+    left: 300px;
+}
+.conteiner{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+.img{
+    object-fit: cover;
+    width: 500px;
+    height: 500px;
+}
+.img_menor{
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.conteiner_menor{
+    display: flex;
+    flex-direction: row;
+    columns: 100px 100px 100px;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    gap: 20px;
+    position: absolute;
+    top:720px;
+    left: 500px;
+}
+.img_menor{
+    object-fit: cover;
+    width: 100px;
+    height: 100px; 
+    box-shadow: 2px 2px 4px black;
 }
