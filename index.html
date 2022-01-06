@@ -12,6 +12,8 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
 <body>
+<div id="fundo_preto"></div>
+<div id="corpo">
 <div id="menu-separador">
 <div id="menu">
   <a href="index.html"> <object data="/images/logo.svg" type="image/svg+xml">
@@ -30,18 +32,15 @@
 </div>
 <div class="carrossel">
   <div class="conteiner" id="img">
-    <img class="img" src="images/image-product-1.jpg"alt=".">
-   <!-- <img class="img" src="images/image-product-2.jpg"alt=".">
-    <img class="img" src="images/image-product-3.jpg"alt=".">
-    <img class="img" src="images/image-product-4.jpg"alt=""> -->
+    <img class="img" src="images/image-product-1.jpg">
   </div>
 </div>
 
   <div class="conteiner_menor" id="img_menor">
-    <img class="img_menor" id="thumbnail1"src="images/image-product-1-thumbnail.jpg"alt=".">
+    <img class="img_menor" id="thumbnail1"src="images/image-product-1-thumbnail.jpg"al=".">
     <img class="img_menor" id="thumbnail2"src="images/image-product-2-thumbnail.jpg"alt=".">
     <img class="img_menor" id="thumbnail3"src="images/image-product-3-thumbnail.jpg"alt=".">
-    <img class="img_menor" id="thumbnail4" src="images/image-product-4-thumbnail.jpg"alt="">
+    <img class="img_menor" id="thumbnail4"src="images/image-product-4-thumbnail.jpg"alt=".">
   </div>
 
 
@@ -54,14 +53,18 @@
   These low-profile sneakers are your perfect casual wear companion. Featuring a 
   durable rubber outer sole, they’ll withstand everything the weather can offer.
 </p>
+  
   <p id="preço">$125.00</p> 
+  
   <p>
   50%
   $250.00
   </p>
 <div id="qtde_produtos">
   <button id="menos" type="button" class="botão arredondar">-</button>
-  <p id="quantidade" class="botão">0</p> 
+  <div id="container">
+    <p id="quantidade" class="botão">1</p>
+</div>
   <button id="mais"type="button" class="botão arredondar">+</button>
 </div>
   Add to cart
@@ -72,7 +75,7 @@
     Coded by <a href="#">Alisson Oliveira</a>.
   </div>
 
-
+</div>
   <script src="script.js"></script>
 </body>
 </html>
