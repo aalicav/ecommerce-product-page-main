@@ -50,9 +50,9 @@ function clickThumbnail(){
     document.querySelector("#img_menor #thumbnail4").addEventListener('click',mostraImagem4)
 }
 function mostraCarrossel(){
-    document.querySelector("#corpo .carrossel"),addEventListener('dblclick',function(){
+    document.querySelector("#corpo .carrossel").addEventListener('dblclick',function(){
         document.querySelector("#fundo_preto").style.display = 'block'
-        document.querySelector("#fundo_preto"),addEventListener('dblclick',function(){
+        document.querySelector("#fundo_preto").addEventListener('dblclick',function(){
             document.querySelector("#fundo_preto").style.display = 'none'
         });
     });
