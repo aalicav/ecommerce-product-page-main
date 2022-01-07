@@ -5,7 +5,7 @@ let quantidade = 1
 const imgs = document.getElementById("img")
 let idx = 0;
 const img = document.querySelectorAll("#img img")
-document.querySelector("#fundo_preto").style.display = 'none'
+document.querySelector("#carrossel_oculto").style.display = 'none'
 function calculaPreço(){
 // Calcula a quantidade de produtos e o preço total
     function soma(){
@@ -31,29 +31,29 @@ calculaPreço()
 
 function clickThumbnail(){
     function mostraImagem1(evento){
-        document.querySelector("#img img").setAttribute('src',"images/image-product-1.jpg")
-        document.querySelector("#img thumbnail3").setAttribute('border-color','orange')
+        document.querySelector("#corpo #img img").setAttribute('src',"images/image-product-1.jpg")
+        document.querySelector("#corpo #img thumbnail3").setAttribute('border-color','orange')
     }
     function mostraImagem2(){
-        document.querySelector("#img img").setAttribute('src',"images/image-product-2.jpg")
-        document.querySelector("#img thumbnail2").setAttribute('border-color','orange')
+        document.querySelector("#corpo #img img").setAttribute('src',"images/image-product-2.jpg")
+        document.querySelector("#corpo #img thumbnail2").setAttribute('border-color','orange')
     }function mostraImagem3(){
-        document.querySelector("#img img").setAttribute('src',"images/image-product-3.jpg")
-        document.querySelector("#img thumbnail3").setAttribute('border-color','orange')
+        document.querySelector("#corpo #img img").setAttribute('src',"images/image-product-3.jpg")
+        document.querySelector("#corpo #img thumbnail3").setAttribute('border-color','orange')
     }function mostraImagem4(){
-        document.querySelector("#img img").setAttribute('src',"images/image-product-4.jpg")
-        document.querySelector("#img thumbnail4").setAttribute('border-color','orange')
+        document.querySelector("#corpo #img img").setAttribute('src',"images/image-product-4.jpg")
+        document.querySelector("#corpo #img thumbnail4").setAttribute('border-color','orange')
     }
-    document.querySelector("#img_menor #thumbnail1").addEventListener('click',mostraImagem1)
-    document.querySelector("#img_menor #thumbnail2").addEventListener('click',mostraImagem2)
-    document.querySelector("#img_menor #thumbnail3").addEventListener('click',mostraImagem3)
-    document.querySelector("#img_menor #thumbnail4").addEventListener('click',mostraImagem4)
+    document.querySelector("#corpo #img_menor #thumbnail1").addEventListener('click',mostraImagem1)
+    document.querySelector("#corpo #img_menor #thumbnail2").addEventListener('click',mostraImagem2)
+    document.querySelector("#corpo #img_menor #thumbnail3").addEventListener('click',mostraImagem3)
+    document.querySelector("#corpo #img_menor #thumbnail4").addEventListener('click',mostraImagem4)
 }
 function mostraCarrossel(){
     document.querySelector("#corpo .carrossel").addEventListener('dblclick',function(){
-        document.querySelector("#fundo_preto").style.display = 'block'
-        document.querySelector("#fundo_preto").addEventListener('dblclick',function(){
-            document.querySelector("#fundo_preto").style.display = 'none'
+        document.querySelector("#carrossel_oculto").style.display = 'block'
+        document.querySelector("#carrossel_oculto").addEventListener('dblclick',function(){
+            document.querySelector("#carrossel_oculto").style.display = 'none'
         });
     });
 
